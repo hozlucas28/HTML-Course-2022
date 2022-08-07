@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+
+    <!-- PRIMER FORMULARIO -->
+    <hr>
+    <form action=""> <!-- "Action" es utilizado en Backend -->
+
+        <!-- Campos para completar -->
+        <label for="ID_Name"> Nombre: </label> <!-- Encabezado -->
+        <input type="text" name="Name" id="ID_Name" placeholder="Ingrese su nombre"> <!-- "type" indica el contenido aceptado -->
+
+        <br>
+        <label for="ID_Phone"> Telefono: </label>
+        <input type="number" name="Phone" id="ID_Phone" placeholder="Ingrese su telefono"> <!-- "name" le asigna un nombre en el envío -->
+
+        <br>
+        <label for="ID_Email"> Email: </label>
+        <input type="email" name="Email" id="ID_Email" placeholder="Ingrese su email"> <!-- "id" asigna un identificador único -->
+
+        <br>
+        <label for="ID_Password"> Contraseña: </label>
+        <input type="password" name="Password" id="ID_Password" placeholder="Ingrese su contraseña"> <!-- "placeholder" muestra una leyenda -->
+
+        <br>
+        <label for="ID_Gender"> Género: </label>
+        <input type="text" name="Gender" id="ID_Gender" placeholder="Ingrese su género" value="Hombre"> <!-- "value" coloca un valor por defecto -->
+        <!--------------------------->
+
+        <!-- Botones -->
+        <br>
+        <input type="submit" name="Send" value="Enviar">
+        <!------------->
+    </form>
+    <!----------------------->
+
+
+    <!-- SEGUNDO FORMULARIO -->
+    <hr>
+    <form action="">
+
+        <!-- Campos para completar -->
+        <label for="ID_Name"> Nombre: </label>
+        <input type="text" name="Name" id="ID_Name" readonly> <!-- "readonly" no permite escribir -->
+
+        <br>
+        <label for="ID_Phone"> Telefono: </label>
+        <input type="number" name="Phone" id="ID_Phone" disabled> <!-- "disabled" lo desactiva -->
+
+        <br>
+        <label for="ID_Email"> Email: </label>
+        <input type="email" name="Email" id="ID_Email" required> <!-- "required" obliga que este sea completado -->
+
+        <br>
+        <label for="ID_Password"> Contraseña: </label>
+        <input type="password" name="Password" id="ID_Password" autofocus> <!-- "autofocus" posiciona el puntero automáticamente en este -->
+        <!--------------------------->
+
+        <!-- Botones -->
+        <br>
+        <input type="submit" name="Send" value="Enviar">
+        <!------------->
+    </form>
+    <!------------------------>
+</body>
+</html>
