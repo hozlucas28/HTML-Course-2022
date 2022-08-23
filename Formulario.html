@@ -7,68 +7,56 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Formulario</h1>
+    <!-- ----------------------------- Encabezado ------------------------------ -->
+    <header>
+        <h1>Formulario</h1>
+    </header>
 
 
-    <!-- PRIMER FORMULARIO -->
-    <hr>
-    <form action=""> <!-- "Action" es utilizado en Backend -->
-
-        <!-- Campos para completar -->
-        <label for="ID_Name"> Nombre: </label> <!-- Encabezado -->
-        <input type="text" name="Name" id="ID_Name" placeholder="Ingrese su nombre"> <!-- "type" indica el contenido aceptado -->
-
-        <br>
-        <label for="ID_Phone"> Telefono: </label>
-        <input type="number" name="Phone" id="ID_Phone" placeholder="Ingrese su telefono"> <!-- "name" le asigna un nombre en el envío -->
-
-        <br>
-        <label for="ID_Email"> Email: </label>
-        <input type="email" name="Email" id="ID_Email" placeholder="Ingrese su email"> <!-- "id" asigna un identificador único -->
-
-        <br>
-        <label for="ID_Password"> Contraseña: </label>
-        <input type="password" name="Password" id="ID_Password" placeholder="Ingrese su contraseña"> <!-- "placeholder" muestra una leyenda -->
-
-        <br>
-        <label for="ID_Gender"> Género: </label>
-        <input type="text" name="Gender" id="ID_Gender" placeholder="Ingrese su género" value="Hombre"> <!-- "value" coloca un valor por defecto -->
-        <!--------------------------->
-
-        <!-- Botones -->
-        <br>
-        <input type="submit" name="Send" value="Enviar">
-        <!------------->
-    </form>
-    <!----------------------->
-
-
-    <!-- SEGUNDO FORMULARIO -->
-    <hr>
-    <form action="">
-
-        <!-- Campos para completar -->
-        <label for="ID_Name"> Nombre: </label>
-        <input type="text" name="Name" id="ID_Name" readonly> <!-- "readonly" no permite escribir -->
-
-        <br>
-        <label for="ID_Phone"> Telefono: </label>
-        <input type="number" name="Phone" id="ID_Phone" disabled> <!-- "disabled" lo desactiva -->
-
-        <br>
-        <label for="ID_Email"> Email: </label>
-        <input type="email" name="Email" id="ID_Email" required> <!-- "required" obliga que este sea completado -->
-
-        <br>
-        <label for="ID_Password"> Contraseña: </label>
-        <input type="password" name="Password" id="ID_Password" autofocus> <!-- "autofocus" posiciona el puntero automáticamente en este -->
-        <!--------------------------->
-
-        <!-- Botones -->
-        <br>
-        <input type="submit" name="Send" value="Enviar">
-        <!------------->
-    </form>
-    <!------------------------>
+    <!-- ------------------------- Contenido Principal ------------------------- -->
+    <main>
+        <hr>
+        <!-- PRIMER FORMULARIO -->
+        <form action=""> <!-- "action" es utilizado en Back End -->
+            <!-- Campos para completar -->
+            <label for="ID_Name"> Nombre: </label> <!-- Encabezado -->
+            <input type="text" name="Name" id="ID_Name" placeholder="Ingrese su nombre"> <!-- "type" indica el contenido aceptado -->
+            <br>
+            <label for="ID_Phone"> Teléfono: </label>
+            <input type="number" name="Phone" id="ID_Phone" placeholder="Ingrese su telefono"> <!-- "name" le asigna un nombre en el envío -->
+            <br>
+            <label for="ID_Email"> Email: </label>
+            <input type="email" name="Email" id="ID_Email" placeholder="Ingrese su email"> <!-- "id" asigna un identificador único -->
+            <br>
+            <label for="ID_Password"> Contraseña: </label>
+            <input type="password" name="Password" id="ID_Password" placeholder="Ingrese su contraseña"> <!-- "placeholder" muestra una leyenda -->
+            <br>
+            <label for="ID_Gender"> Género: </label>
+            <input type="text" name="Gender" id="ID_Gender" placeholder="Ingrese su género" value="Hombre"> <!-- "value" coloca un valor por defecto -->
+            <br>
+            <!-- Botón -->
+            <input type="submit" name="Send" value="Enviar">
+        </form>
+    
+        <hr>
+        <!-- SEGUNDO FORMULARIO -->
+        <form action="">
+            <!-- Campos para completar -->
+            <label for="ID_Name"> Nombre: </label>
+            <input type="text" name="Name" id="ID_Name" readonly> <!-- "readonly" no permite escribir -->
+            <br>
+            <label for="ID_Phone"> Teléfono: </label>
+            <input type="number" name="Phone" id="ID_Phone" disabled> <!-- "disabled" lo desactiva -->
+            <br>
+            <label for="ID_Email"> Email: </label>
+            <input type="email" name="Email" id="ID_Email" required> <!-- "required" obliga que este sea completado -->
+            <br>
+            <label for="ID_Password"> Contraseña: </label>
+            <input type="password" name="Password" id="ID_Password" autofocus> <!-- "autofocus" posiciona el puntero automáticamente en este -->
+            <br>
+            <!-- Botón -->
+            <input type="submit" name="Send" value="Enviar">
+        </form>
+    </main>
 </body>
 </html>
