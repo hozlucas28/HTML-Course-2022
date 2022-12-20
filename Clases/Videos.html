@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="robots" content="index, follow"/>
-    <meta name="Author" lang="es" content="Lucas Hoz"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Udemy, HTML, Temática, Videos"/>
-    <link rel="shortcut icon" href="Img/logo.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curso de HTML de la plataforma Udemy, temática 'Videos'."/>
-    <title>Videos</title>
-</head>
-<body>
-    <!-- ----------------------------- Encabezado ------------------------------ -->
-    <header>
-        <h1>Videos</h1>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="Author" lang="es" content="Lucas Hoz" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="Udemy, HTML, Temática, Videos" />
+		<link rel="shortcut icon" href="Img/logo.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Curso de HTML de la plataforma Udemy, temática 'Videos'." />
+		<title>Videos</title>
+	</head>
+	<body>
+		<!-- ----------------------------- Encabezado ------------------------------ -->
+		<header>
+			<h1>Videos</h1>
+		</header>
 
+		<!-- ------------------------- Contenido Principal ------------------------- -->
+		<main>
+			<!-- Videos Internos -->
+			<hr />
+			<video width="320" height="240" controls>
+				<!-- 'controls' habilita los controles multimedia-->
+				<source src="Video/Demo.mp4" type="Video/mp4" />
+				<!-- 'type' indica el formato del archivo -->
+			</video>
 
-    <!-- ------------------------- Contenido Principal ------------------------- -->
-    <main>
-        <!-- Videos Internos -->
-        <hr>
-        <video width="320" height="240" controls> <!-- 'controls' habilita los controles multimedia-->
-            <source src="Video/Demo.mp4" type="Video/mp4"> <!-- 'type' indica el formato del archivo -->
-        </video>
-    
-        <!-- Videos Externos-->
-        <br>
-        <hr>
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/V7xMEWAY13M" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-        ></iframe>
-    </main>
-</body>
+			<!-- Videos Externos-->
+			<br />
+			<hr />
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/V7xMEWAY13M"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</main>
+	</body>
 </html>
